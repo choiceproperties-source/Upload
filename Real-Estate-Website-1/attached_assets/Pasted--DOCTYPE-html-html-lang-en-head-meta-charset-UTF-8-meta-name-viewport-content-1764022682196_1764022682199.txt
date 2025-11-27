@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Apartment Filters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .filter-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 24px;
+            width: 100%;
+            max-width: 900px;
+        }
+        
+        .filter-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 18px;
+            color: #1a1a1a;
+        }
+        
+        .filters-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        .filter-option {
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 1px solid #e9ecef;
+        }
+        
+        .filter-option:hover {
+            background: #edf2ff;
+            border-color: #c5d3ff;
+        }
+        
+        .filter-option input[type="checkbox"] {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            accent-color: #4d7cfe;
+            cursor: pointer;
+        }
+        
+        .filter-option label {
+            cursor: pointer;
+            font-size: 15px;
+            color: #333;
+            white-space: nowrap;
+        }
+        
+        .count {
+            color: #6c757d;
+            font-size: 13px;
+            margin-left: 6px;
+        }
+        
+        .divider {
+            height: 1px;
+            background: #e9ecef;
+            margin: 16px 0;
+        }
+        
+        .search-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 15px;
+            background: #f8f9fa;
+            transition: all 0.2s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #4d7cfe;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(77, 124, 254, 0.1);
+        }
+        
+        .search-btn {
+            padding: 12px 24px;
+            background: #4d7cfe;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        
+        .search-btn:hover {
+            background: #3a6bfd;
+            box-shadow: 0 4px 8px rgba(77, 124, 254, 0.2);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .filters-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .filter-option {
+                justify-content: flex-start;
+            }
+            
+            .search-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="filter-container">
+        <div class="filter-title">Apartments (2.5k+)</div>
+        
+        <div class="filters-row">
+            <div class="filter-option">
+                <input type="checkbox" id="single-family">
+                <label for="single-family">Single-Family <span class="count">(1.8k+)</span></label>
+            </div>
+            
+            <div class="filter-option">
+                <input type="checkbox" id="townhomes" checked>
+                <label for="townhomes">Townhomes <span class="count">(1.2k+)</span></label>
+            </div>
+            
+            <div class="filter-option">
+                <input type="checkbox" id="duplexes">
+                <label for="duplexes">Duplexes <span class="count">(800+)</span></label>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="search-row">
+            <input type="text" class="search-input" placeholder="Enter city or state...">
+            <button class="search-btn">Find Rentals →</button>
+        </div>
+    </div>
+</body>
+</html>
