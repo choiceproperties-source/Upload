@@ -1,0 +1,12 @@
+{
+  "name": "choice-properties",
+  "version": "1.0.0",
+  "description": "Choice Properties - Premium Rental Housing Platform",
+  "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "start": "cd backend && npm start"
+  }
+}

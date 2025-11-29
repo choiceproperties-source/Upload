@@ -1,5 +1,0 @@
-[build]
-cmds = ["cd backend && npm install"]
-
-[start]
-cmd = "cd backend && npm start"
