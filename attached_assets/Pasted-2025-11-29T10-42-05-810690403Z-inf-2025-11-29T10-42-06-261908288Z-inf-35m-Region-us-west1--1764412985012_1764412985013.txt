@@ -1,0 +1,50 @@
+2025-11-29T10:42:05.810690403Z [inf]  
+2025-11-29T10:42:06.261908288Z [inf]  [35m[Region: us-west1][0m
+2025-11-29T10:42:06.289774104Z [inf]  [35m==============
+2025-11-29T10:42:06.289812628Z [inf]  Using Nixpacks
+2025-11-29T10:42:06.289816988Z [inf]  ==============
+2025-11-29T10:42:06.289820285Z [inf]  [0m
+2025-11-29T10:42:06.289902097Z [inf]  context: t038-8JVZ
+2025-11-29T10:42:06.398541672Z [inf]  ╔═══════════ Nixpacks v1.38.0 ═══════════╗
+2025-11-29T10:42:06.398574650Z [inf]  ║ build      │ cd backend && npm install ║
+2025-11-29T10:42:06.398579463Z [inf]  ║────────────────────────────────────────║
+2025-11-29T10:42:06.398582545Z [inf]  ║ start      │ cd backend && npm start   ║
+2025-11-29T10:42:06.398587288Z [inf]  ╚════════════════════════════════════════╝
+2025-11-29T10:42:06.615587762Z [inf]  [internal] load build definition from Dockerfile
+2025-11-29T10:42:06.615634786Z [inf]  [internal] load build definition from Dockerfile
+2025-11-29T10:42:06.615648216Z [inf]  [internal] load build definition from Dockerfile
+2025-11-29T10:42:06.624172377Z [inf]  [internal] load build definition from Dockerfile
+2025-11-29T10:42:06.625822935Z [inf]  [internal] load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+2025-11-29T10:42:06.722150140Z [inf]  [internal] load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+2025-11-29T10:42:06.722465374Z [inf]  [internal] load .dockerignore
+2025-11-29T10:42:06.722579499Z [inf]  [internal] load .dockerignore
+2025-11-29T10:42:06.722940162Z [inf]  [internal] load .dockerignore
+2025-11-29T10:42:06.733367684Z [inf]  [internal] load .dockerignore
+2025-11-29T10:42:06.736514450Z [inf]  [5/5] COPY . /app
+2025-11-29T10:42:06.736532755Z [inf]  [4/5] RUN  cd backend && npm install
+2025-11-29T10:42:06.736548516Z [inf]  [3/5] COPY . /app/.
+2025-11-29T10:42:06.736558087Z [inf]  [internal] load build context
+2025-11-29T10:42:06.736568669Z [inf]  [2/5] WORKDIR /app/
+2025-11-29T10:42:06.736576615Z [inf]  [1/5] FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de
+2025-11-29T10:42:06.736604967Z [inf]  [1/5] FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de
+2025-11-29T10:42:06.736613793Z [inf]  [internal] load build context
+2025-11-29T10:42:06.736625975Z [inf]  [internal] load build context
+2025-11-29T10:42:06.736635044Z [inf]  [internal] load build context
+2025-11-29T10:42:06.744870509Z [inf]  [1/5] FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de
+2025-11-29T10:42:06.847696424Z [inf]  [internal] load build context
+2025-11-29T10:42:06.868153419Z [inf]  [2/5] WORKDIR /app/
+2025-11-29T10:42:06.868211799Z [inf]  [3/5] COPY . /app/.
+2025-11-29T10:42:06.868229781Z [inf]  [4/5] RUN  cd backend && npm install
+2025-11-29T10:42:07.018621693Z [inf]  /bin/bash: line 1: npm: command not found
+
+2025-11-29T10:42:07.073329963Z [err]  [4/5] RUN  cd backend && npm install
+2025-11-29T10:42:07.088959317Z [err]  Dockerfile:15
+2025-11-29T10:42:07.088998350Z [err]  -------------------
+2025-11-29T10:42:07.089007331Z [err]  13 |     # build phase
+2025-11-29T10:42:07.089013336Z [err]  14 |     COPY . /app/.
+2025-11-29T10:42:07.089020691Z [err]  15 | >>> RUN  cd backend && npm install
+2025-11-29T10:42:07.089025748Z [err]  16 |
+2025-11-29T10:42:07.089030917Z [err]  17 |
+2025-11-29T10:42:07.089035947Z [err]  -------------------
+2025-11-29T10:42:07.089040740Z [err]  ERROR: failed to build: failed to solve: process "/bin/bash -ol pipefail -c cd backend && npm install" did not complete successfully: exit code: 127
+2025-11-29T10:42:07.094942929Z [err]  Error: Docker build failed
