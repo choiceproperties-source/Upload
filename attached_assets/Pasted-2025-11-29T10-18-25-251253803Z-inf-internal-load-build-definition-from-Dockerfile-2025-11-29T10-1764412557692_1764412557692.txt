@@ -1,0 +1,27 @@
+2025-11-29T10:18:25.251253803Z [inf]  [internal] load build definition from Dockerfile
+2025-11-29T10:18:25.251305129Z [inf]  [internal] load build definition from Dockerfile
+2025-11-29T10:18:25.251320954Z [inf]  [internal] load build definition from Dockerfile
+2025-11-29T10:18:25.251330908Z [inf]  [internal] load build definition from Dockerfile
+2025-11-29T10:18:25.260376719Z [inf]  [internal] load build definition from Dockerfile
+2025-11-29T10:18:25.262121863Z [inf]  [internal] load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+2025-11-29T10:18:25.356238513Z [inf]  [internal] load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+2025-11-29T10:18:25.356440580Z [inf]  [internal] load .dockerignore
+2025-11-29T10:18:25.356482211Z [inf]  [internal] load .dockerignore
+2025-11-29T10:18:25.356640509Z [inf]  [internal] load .dockerignore
+2025-11-29T10:18:25.364927762Z [inf]  [internal] load .dockerignore
+2025-11-29T10:18:25.368606243Z [inf]  [5/5] COPY . /app
+2025-11-29T10:18:25.368627813Z [inf]  [4/5] RUN  cd backend && npm install
+2025-11-29T10:18:25.368641550Z [inf]  [3/5] COPY . /app/.
+2025-11-29T10:18:25.368647455Z [inf]  [internal] load build context
+2025-11-29T10:18:25.368655334Z [inf]  [2/5] WORKDIR /app/
+2025-11-29T10:18:25.368663128Z [inf]  [1/5] FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de
+2025-11-29T10:18:25.368668691Z [inf]  [1/5] FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de
+2025-11-29T10:18:25.368677262Z [inf]  [internal] load build context
+2025-11-29T10:18:25.368687147Z [inf]  [internal] load build context
+2025-11-29T10:18:25.375454103Z [inf]  [1/5] FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de
+2025-11-29T10:18:25.375697513Z [inf]  [2/5] WORKDIR /app/
+2025-11-29T10:18:25.440263671Z [inf]  [internal] load build context
+2025-11-29T10:18:25.443091737Z [inf]  [3/5] COPY . /app/.
+2025-11-29T10:18:25.499158436Z [inf]  [3/5] COPY . /app/.
+2025-11-29T10:18:25.502053104Z [inf]  [4/5] RUN  cd backend && npm install
+2025-11-29T10:18:25.578516423Z [inf]  /bin/bash: line 1: npm: command not found
